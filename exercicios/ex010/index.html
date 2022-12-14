@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir em dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>bo aprende como taca audio</p>
+    <audio src="midia/sii.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/sii.mp3" type="audio/mpeg">
+        <source src="midia/sii.mp3" type="audio/ogg">
+        <source src="midia/sii.mp3" type="audio/wav">
+        <p>infelizmente seu navegador é gay se vc n consegue tocar <a href="midia/sii.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+</body>
+</html>
